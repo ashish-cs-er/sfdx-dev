@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Get Record API">
+        <div class="slds-p-var-around_medium">
+            <template if:true={accountInfo}>
+                <p>{accountInfo.fields.Name.value}</p>
+                <p>{accountInfo.fields.AnnualRevenue.value}</p>
+                <p>{name}</p>
+                <p>{annualRevenue}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

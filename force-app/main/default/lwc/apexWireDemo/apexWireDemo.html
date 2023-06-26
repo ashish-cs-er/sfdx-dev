@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Apex Wire Demo">
+        <div class="slds-p-around_medium">
+            <template if:true={accounts.data}>
+                <h1>Accounts Exists</h1>
+                <template for:each={accounts.data} for:item="account">
+                    <div key={account.Id}>
+                        <p>{account.Name}</p>
+                        <p>{account.Industry}</p>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

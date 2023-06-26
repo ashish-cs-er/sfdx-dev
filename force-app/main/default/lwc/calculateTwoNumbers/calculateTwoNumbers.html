@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Calculate Sum">
+        <lightning-button 
+            label="Submit" 
+            slot="actions" 
+            onclick={handleClick}>
+        </lightning-button>
+        <lightning-input
+            label="First No"
+            name="fNum"
+            value={fNum}
+            type="number"
+            onchange={handleChange}
+        ></lightning-input>
+        <lightning-input
+            label="Second No"
+            name="sNum"
+            value={sNum}
+            type="number"
+            onchange={handleChange}
+        ></lightning-input>
+        <p slot="footer">{result}</p>
+    </lightning-card>
+</template>

@@ -1,0 +1,39 @@
+<template>
+<lightning-card title="Zero To Hero in LWC">
+    <div class="slds-m-around_small">
+        <h1>Hello World from Nikhil Sir</h1>
+        <p>Plese see example of data binding</p>
+        <p>{age}</p>
+        <div>{fullName} teaches LWC</div>
+        <lightning-input 
+            type="text" 
+            value={fullName}
+            variant="standard" 
+            name="fullName" label="Full Name" 
+            onchange = {changeHandler}
+            placeholder="Enter Full Name">
+        </lightning-input>
+    </div>
+    
+</lightning-card>
+
+<lightning-card title="Learning Track Decorator">
+    <div class="slds-m-around_small">
+        <div>{address.city} CITY</div>
+        <lightning-input 
+            type="text" 
+            value={address.city}
+            variant="standard" 
+            name="city" label="Full Name" 
+            onchange = {changeHandler}
+            placeholder="Enter Full Name">
+        </lightning-input>
+    </div>
+</lightning-card>
+
+<lightning-card title="Getter Demo">
+    <div class="slds-m-around_small">
+        <h1>{firstUser}</h1>
+    </div>
+</lightning-card>
+</template>

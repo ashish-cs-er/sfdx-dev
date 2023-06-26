@@ -1,0 +1,12 @@
+<template>
+    
+    <!-- With an icon -->
+    <div class="slds-p-around_medium lgc-bg" onclick={tileClickHandler}>
+        <lightning-tile label={meetingRoomInfo.roomName} type="media">
+            <lightning-icon slot="media" icon-name="standard:groups"></lightning-icon>
+            <p class="slds-truncate" title={meetingRoomInfo.roomCapacity}>
+                Room Capacity is {meetingRoomInfo.roomCapacity}
+            </p>
+        </lightning-tile>
+    </div>
+</template>

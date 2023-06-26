@@ -1,0 +1,20 @@
+<template>
+    <c-p2c-alert-component message="Got This message from Parent">
+    </c-p2c-alert-component>
+
+    <c-p2c-carousel-component carousel-details={carouselData}></c-p2c-carousel-component>
+
+    
+    <lightning-card title="Parent to Child on Parent Action">
+        <lightning-input 
+            type="number" 
+            label="Enter percentage"
+            onchange={handleChange}></lightning-input>
+        <c-p2cprogress-component progress-value={percentage}></c-p2cprogress-component>
+    </lightning-card>
+    
+    <lightning-button variant="brand" label="Change SLider Value"
+    onclick={changeValue} class="slds-m-left_x-small"></lightning-button>
+    <c-p2c-slider-component></c-p2c-slider-component>
+
+</template>

@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Child To Parent Comm">
+        <p>I am Parent Component</p>
+        <h1>{counter}</h1>
+        <c-child-to-parent-child-component onadd={handleAdd} onsub={handleSub} onmul={handleMul}></c-child-to-parent-child-component>
+    </lightning-card>
+</template>

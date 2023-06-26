@@ -1,0 +1,6 @@
+<template>
+    <template for:each={sushantMovies} for:item="movieObj">
+        <c-movie-tile key={movieObj.movieName} sushant-movies={movieObj}>
+        </c-movie-tile>
+    </template>
+</template>

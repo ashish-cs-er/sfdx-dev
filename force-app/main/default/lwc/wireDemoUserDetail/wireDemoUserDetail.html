@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="wire with adapter and config">
+        <template if:true={userDetail}>
+            <div> Email: {userDetail.Email.value}</div>
+            <div> Name: {userDetail.Name.value}</div>
+        </template>
+    </lightning-card>
+</template>
