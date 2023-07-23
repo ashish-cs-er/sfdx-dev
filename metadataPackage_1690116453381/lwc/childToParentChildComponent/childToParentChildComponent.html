@@ -1,0 +1,34 @@
+<template>
+    <p> I am Child Component </p>
+    <lightning-layout multiple-rows>
+        <lightning-layout-item flexibility="auto">
+            <lightning-button
+                label="Add"
+                title="Add"
+                onclick={handleAddClick}
+                variant="success"
+                icon-name="utility:add"
+            ></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item flexibility="auto">
+            <lightning-button
+                label="Sub"
+                title="Sub"
+                onclick={handleSubClick}
+                variant="success"
+                icon-name="utility:dash"
+            ></lightning-button>
+        </lightning-layout-item>
+
+        <lightning-layout-item flexibility="auto">
+            <lightning-button
+                label="Mul"
+                title="Mul"
+                onclick={handleMulClick}
+                variant="success"
+                icon-name="utility:close"
+                data-factor="2"
+            ></lightning-button>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Apex Wire with Params">
+        <div class="slds-p-around_medium">
+            <template if:true={filteredAccounts.data}>
+                <h1>Data Exists</h1>
+                <template for:each={filteredAccounts.data} for:item="account">
+                    <div class="slds-box slds-box_xx" key={account.Id}>
+                        <p>{account.Name}</p>
+                        <p>{account.Industry}</p>
+                        <p>{account.Phone}</p>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

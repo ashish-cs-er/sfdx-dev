@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Apex To Create Accounts">
+        <lightning-input
+            type="text"
+            name="name"
+            value={accountRecord.Name}
+            onchange={handleChange}
+        ></lightning-input>
+        <lightning-input
+            type="text"
+            name="phone"
+            value={accountRecord.Phone}
+            onchange={handleChange}
+        ></lightning-input>
+        <lightning-input
+            type="text"
+            name="type"
+            value={accountRecord.Type}
+            onchange={handleChange}
+        ></lightning-input>
+        <lightning-button variant="brand" onclick={handleSaveAccount} label="Create Account"></lightning-button>
+    </lightning-card>
+</template>

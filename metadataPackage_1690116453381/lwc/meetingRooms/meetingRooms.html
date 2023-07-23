@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Public API Properties">
+        <h1>Hi From Child To Parent</h1>
+        <lightning-layout multiple-rows="true">
+            <lightning-layout-item size="4">
+                <ul>
+                    <template for:each={meetingRooms} for:item="room">
+                        <li key={room.roomName}>
+                            <c-meeting-room meeting-room-info={room} ontileclick={onTileSelectHandler}></c-meeting-room>
+                        </li>
+                    </template>
+                </ul>
+            </lightning-layout-item>
+            <lightning-layout-item size="4">
+                Selected Room is: {selectedMeetingRoomInfo}
+            </lightning-layout-item>
+        </lightning-layout>
+        
+    </lightning-card>
+</template>
