@@ -4,6 +4,7 @@ export default class ParentToChildParent extends LightningElement {
     firstNum=0;
     secondNum=0;
     result = 0;
+    
     handleChange(event){
         if(event.target.name==="firstNum"){
             this.firstNum = event.target.value;
